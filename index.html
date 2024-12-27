@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네트워크 요청 데모</title>
+  </head>
+  <body>
+    <section class="container"> 
+      <h2>네트워크 요청 데모</h2>
+      <div class="input-container">
+        <input id="mbti" placeholder="MBTI" />
+        <input id="colorCode" placeholder="#000000" />
+      </div>
+      <div class="buttons-container">
+        <button id="send-button">요청 보내기</button>
+        <button id="load-button">리스트 보기</button>
+      </div>
+      <div class="status"></div>
+      <div class="data"></div>
+    </section>
+    <script type="module" src="eventListener.js"></script>
+    <script type="module" src="apis.js"></script>
+  </body>
+</html>
