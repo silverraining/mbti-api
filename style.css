@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+#fallingStarsCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+
 
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #60d2ce, #0f606377, #59afff);
+  /* background: linear-gradient(135deg, #f93d3d, #fc588e77, #0400ff); */
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,12 +41,12 @@ body {
 h2 {
   font-size: 24px;
   margin-bottom: 16px;
-  background: linear-gradient(45deg, #057384, #0dc832);
+  background: linear-gradient(45deg, #f71212, #1933f2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Input Container Styling */
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -42,7 +55,7 @@ h2 {
 }
 
 input {
-  border: 2px solid #59eafa;
+  border: 2px solid #000000;
   border-radius: 8px;
   padding: 10px;
   font-size: 16px;
@@ -51,8 +64,7 @@ input {
 }
 
 input:focus {
-  border-color: #cbd813;
-  box-shadow: 0 0 6px #b2d30d;
+  border-color: #5617c3cf;
 }
 
 
@@ -64,21 +76,21 @@ input:focus {
 }
 
 button {
-  background: linear-gradient(135deg, #b5e97d, #4de8329d);
-  border: 2px solid #8cc760; /* 테두리 추가 */
-  border-radius: 8px;
+  background: linear-gradient(45deg, #676767, #c6c6c6); 
+  border: none; /* 테두리를 없앰 */
+  border-radius: 12px; /* 둥근 테두리 */
   padding: 12px 16px;
   font-size: 16px;
   color: #fff;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* 글씨 그림자 추가 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-  transition: box-shadow 0.2s ease, transform 0.2s ease; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 6px 8px rgba(45, 45, 45, 0.3); 
   transform: translateY(-2px); /* 약간 올라가는 효과 */
 }
 
